@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/CSS/style-napthe.css" />
+    <title>Nạp Thẻ - Shop Game Account</title>
+  </head>
+  <body class="container">
+    <!-- Loading Animation -->
+    <div class="loading-screen" id="loadingScreen">
+      <div class="loading-spinner">
+        <div class="spinner"></div>
+        <p>Đang tải...</p>
+      </div>
+    </div>
+
+    <!-- Header với animation -->
+    <header class="header-animated">
+      <div class="header1">
+        <nav>
+          <a href="/index.html" class="nav-link">
+            <i class="fas fa-home"></i> Trang Chủ
+          </a>
+          <a href="/HTMLS/napthe.html" class="nav-link active">
+            <i class="fas fa-credit-card"></i> Nạp Thẻ
+          </a>
+          <a
+            href="https://www.facebook.com/vpyy173"
+            target="_blank"
+            class="nav-link facebook-link"
+          >
+            <i class="fab fa-facebook"></i> Facebook AD
+          </a>
+        </nav>
+      </div>
+      <div class="header2">
+        <a class="login-btn" href="/HTMLS/login.html">
+          <i class="fas fa-sign-in-alt"></i> Đăng Nhập
+        </a>
+        <a class="register-btn" href="/HTMLS/register.html">
+          <i class="fas fa-user-plus"></i> Đăng Ký
+        </a>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-container">
+      <!-- Hero Section -->
+      <div class="hero-section">
+        <div class="hero-content">
+          <h1 class="hero-title"><i class="fas fa-credit-card"></i> Nạp Thẻ</h1>
+          <p class="hero-subtitle">Nạp tiền nhanh chóng, an toàn và tiện lợi</p>
+        </div>
+      </div>
+
+      <!-- Payment Methods Grid -->
+      <div class="payment-methods">
+        <div class="method-card" data-method="card">
+          <div class="card-icon">
+            <i class="fas fa-credit-card"></i>
+          </div>
+          <h3>Nạp Bằng Thẻ Cào</h3>
+          <p>Thẻ điện thoại, thẻ game</p>
+          <div class="card-overlay">
+            <span class="method-btn">Chọn</span>
+          </div>
+        </div>
+
+        <div class="method-card" data-method="wallet">
+          <div class="card-icon">
+            <i class="fas fa-wallet"></i>
+          </div>
+          <h3>Nạp Vào Ví Tài Khoản</h3>
+          <p>Chuyển khoản trực tiếp</p>
+          <div class="card-overlay">
+            <span class="method-btn">Chọn</span>
+          </div>
+        </div>
+
+        <div class="method-card" data-method="bank">
+          <div class="card-icon">
+            <i class="fas fa-university"></i>
+          </div>
+          <h3>Nạp Bằng Ngân Hàng</h3>
+          <p>Chuyển khoản ngân hàng</p>
+          <div class="card-overlay">
+            <span class="method-btn">Chọn</span>
+          </div>
+        </div>
+
+        <div class="method-card" data-method="purchased">
+          <div class="card-icon">
+            <i class="fas fa-shopping-bag"></i>
+          </div>
+          <h3>Tài Khoản Đã Mua</h3>
+          <p>Xem lịch sử giao dịch</p>
+          <div class="card-overlay">
+            <span class="method-btn">Xem</span>
+          </div>
+        </div>
+
+        <div class="method-card" data-method="installment">
+          <div class="card-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3>Tài Khoản Trả Góp</h3>
+          <p>Mua trả góp linh hoạt</p>
+          <div class="card-overlay">
+            <span class="method-btn">Xem</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nạp Thẻ Form Section -->
+      <div class="napthe-section">
+        <div class="section-header">
+          <h2><i class="fas fa-credit-card"></i> Nạp Thẻ Cào</h2>
+          <p>Chọn đúng mệnh giá thẻ để tránh mất tiền</p>
+        </div>
+
+        <div class="form-container">
+          <form action="" class="napthe-form" id="naptheForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cardType">
+                  <i class="fas fa-mobile-alt"></i> Loại thẻ
+                </label>
+                <select name="cardType" id="cardType" required>
+                  <option value="">Chọn nhà mạng</option>
+                  <option value="viettel">Viettel</option>
+                  <option value="mobiphone">Mobiphone</option>
+                  <option value="vinaphone">Vinaphone</option>
+                  <option value="garena">Garena</option>
+                  <option value="zing">Zing</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="cardValue">
+                  <i class="fas fa-coins"></i> Mệnh giá
+                </label>
+                <select name="cardValue" id="cardValue" required>
+                  <option value="">Chọn mệnh giá</option>
+                  <option value="20000">20,000 VND</option>
+                  <option value="50000">50,000 VND</option>
+                  <option value="100000">100,000 VND</option>
+                  <option value="200000">200,000 VND</option>
+                  <option value="500000">500,000 VND</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="serialNumber">
+                  <i class="fas fa-hashtag"></i> Số seri
+                </label>
+                <input
+                  type="text"
+                  id="serialNumber"
+                  name="serialNumber"
+                  maxlength="16"
+                  placeholder="Nhập số seri thẻ"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="cardCode">
+                  <i class="fas fa-key"></i> Mã thẻ
+                </label>
+                <input
+                  type="text"
+                  id="cardCode"
+                  name="cardCode"
+                  maxlength="16"
+                  placeholder="Nhập mã thẻ"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="submit-btn">
+                <i class="fas fa-credit-card"></i>
+                <span>Nạp Thẻ</span>
+              </button>
+              <button type="button" class="clear-btn" id="clearBtn">
+                <i class="fas fa-eraser"></i>
+                <span>Xóa Form</span>
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Important Notes -->
+        <div class="important-notes">
+          <div class="note-card warning">
+            <div class="note-icon">
+              <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <div class="note-content">
+              <h4>Lưu ý quan trọng</h4>
+              <p>
+                Chọn đúng mệnh giá thẻ. Chọn sai sẽ bị trừ 100% và không được
+                hoàn tiền.
+              </p>
+            </div>
+          </div>
+
+          <div class="note-card info">
+            <div class="note-icon">
+              <i class="fas fa-info-circle"></i>
+            </div>
+            <div class="note-content">
+              <h4>Tỷ lệ nạp 1:1</h4>
+              <p>Ưu tiên nạp thẻ Viettel để được xử lý nhanh nhất.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Actions -->
+      <div class="quick-actions">
+        <h3>Thao tác nhanh</h3>
+        <div class="action-buttons">
+          <button class="action-btn" data-action="history">
+            <i class="fas fa-history"></i>
+            <span>Lịch sử nạp</span>
+          </button>
+          <button class="action-btn" data-action="support">
+            <i class="fas fa-headset"></i>
+            <span>Hỗ trợ</span>
+          </button>
+          <button class="action-btn" data-action="guide">
+            <i class="fas fa-question-circle"></i>
+            <span>Hướng dẫn</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating Action Buttons -->
+    <div class="mes floating-actions">
+      <a
+        href="https://www.messenger.com/"
+        target="_blank"
+        class="messenger-btn"
+      >
+        <i class="fa-brands fa-facebook-messenger fa-2xl"></i>
+        <span class="tooltip">Chat với chúng tôi</span>
+      </a>
+      <a href="/index.html" class="home-btn">
+        <img src="/IMAGES/tc.png" alt="trangchu" />
+        <span class="tooltip">Về trang chủ</span>
+      </a>
+    </div>
+
+    <!-- Footer với animation -->
+    <footer class="footer-animated">
+      <div class="footer-content">
+        <div class="ft1">
+          <i class="fas fa-shield-alt"></i>
+          Mua Bán Game Account Tự Động - An Toàn - Tiện Lợi
+        </div>
+        <div class="ft2">
+          <i class="fas fa-gift"></i>
+          Mang Lại Những Account Chất Lượng, Giá Rẻ, Uy Tín. Cám Ơn Các Bạn Đã
+          Đồng Hành Cùng PhuccPyy Trong Thời Gian Qua!
+        </div>
+        <div class="ft3">
+          <i class="fas fa-clock"></i>
+          Tôi luôn lấy uy tín đặt trên hàng đầu đối với khách hàng, hy vọng
+          chúng tôi sẽ được phục vụ các bạn. Cám ơn!
+          <br />
+          <strong>Thời gian hỗ trợ:</strong> Sáng: 8h00 -> 11h30 | Chiều: 13h00
+          -> 22h00
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/JS/napthe.js"></script>
+  </body>
+</html>

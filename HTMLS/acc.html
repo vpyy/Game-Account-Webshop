@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/CSS/style-acc.css" />
+    <title>Chi Tiết Account - Shop Game Account</title>
+  </head>
+  <body class="container">
+    <!-- Loading Animation -->
+    <div class="loading-screen" id="loadingScreen">
+      <div class="loading-spinner">
+        <div class="spinner"></div>
+        <p>Đang tải...</p>
+      </div>
+    </div>
+
+    <!-- Header với animation -->
+    <header class="header-animated">
+      <div class="header1">
+        <nav>
+          <a href="/index.html" class="nav-link">
+            <i class="fas fa-home"></i> Trang Chủ
+          </a>
+          <a href="/HTMLS/napthe.html" class="nav-link">
+            <i class="fas fa-credit-card"></i> Nạp Thẻ
+          </a>
+          <a
+            href="https://www.facebook.com/vpyy173"
+            target="_blank"
+            class="nav-link facebook-link"
+          >
+            <i class="fab fa-facebook"></i> Facebook AD
+          </a>
+        </nav>
+      </div>
+      <div class="header2">
+        <a class="login-btn" href="/HTMLS/login.html">
+          <i class="fas fa-sign-in-alt"></i> Đăng Nhập
+        </a>
+        <a class="register-btn" href="/HTMLS/register.html">
+          <i class="fas fa-user-plus"></i> Đăng Ký
+        </a>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-container">
+      <!-- Breadcrumb Navigation -->
+      <div class="breadcrumb">
+        <a href="/index.html" class="breadcrumb-item">
+          <i class="fas fa-home"></i> Trang chủ
+        </a>
+        <i class="fas fa-chevron-right"></i>
+        <a href="/HTMLS/showacc.html" class="breadcrumb-item"
+          >Danh sách account</a
+        >
+        <i class="fas fa-chevron-right"></i>
+        <span class="breadcrumb-item active">Chi tiết account</span>
+      </div>
+
+      <!-- Account Detail Section -->
+      <div class="account-detail-section">
+        <div class="detail-container">
+          <!-- Account Images -->
+          <div class="account-images">
+            <div class="main-image">
+              <img src="/IMAGES/ma1.png" alt="Account Main" id="mainImage" />
+              <div class="image-overlay">
+                <button class="zoom-btn" id="zoomBtn">
+                  <i class="fas fa-search-plus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="thumbnail-images">
+              <div class="thumbnail active" data-image="/IMAGES/ma1.png">
+                <img src="/IMAGES/ma1.png" alt="Thumbnail 1" />
+              </div>
+              <div class="thumbnail" data-image="/IMAGES/ma2.png">
+                <img src="/IMAGES/ma2.png" alt="Thumbnail 2" />
+              </div>
+              <div class="thumbnail" data-image="/IMAGES/ma3.png">
+                <img src="/IMAGES/ma3.png" alt="Thumbnail 3" />
+              </div>
+              <div class="thumbnail" data-image="/IMAGES/ma4.png">
+                <img src="/IMAGES/ma4.png" alt="Thumbnail 4" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Account Information -->
+          <div class="account-info">
+            <div class="info-header">
+              <h1 class="account-title">
+                <i class="fas fa-gamepad"></i> Account Liên Quân Mobile
+              </h1>
+              <div class="account-badge">
+                <span class="badge premium">Premium</span>
+                <span class="badge verified">Đã xác minh</span>
+              </div>
+            </div>
+
+            <div class="account-stats">
+              <div class="stat-item">
+                <div class="stat-icon">
+                  <i class="fas fa-level-up-alt"></i>
+                </div>
+                <div class="stat-content">
+                  <span class="stat-label">Cấp độ</span>
+                  <span class="stat-value">100</span>
+                </div>
+              </div>
+
+              <div class="stat-item">
+                <div class="stat-icon">
+                  <i class="fas fa-trophy"></i>
+                </div>
+                <div class="stat-content">
+                  <span class="stat-label">Rank</span>
+                  <span class="stat-value">Kim Cương</span>
+                </div>
+              </div>
+
+              <div class="stat-item">
+                <div class="stat-icon">
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="stat-content">
+                  <span class="stat-label">Đánh giá</span>
+                  <span class="stat-value">4.8/5.0</span>
+                </div>
+              </div>
+
+              <div class="stat-item">
+                <div class="stat-icon">
+                  <i class="fas fa-eye"></i>
+                </div>
+                <div class="stat-content">
+                  <span class="stat-label">Lượt xem</span>
+                  <span class="stat-value">1,234</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="account-description">
+              <h3>Mô tả chi tiết</h3>
+              <p>
+                Account Liên Quân Mobile cấp 100, rank Kim Cương với nhiều skin
+                hiếm và tướng mạnh. Tài khoản đã được chơi và phát triển cẩn
+                thận, phù hợp cho người chơi muốn có trải nghiệm game tốt nhất.
+              </p>
+            </div>
+
+            <div class="account-features">
+              <h3>Tính năng nổi bật</h3>
+              <div class="features-grid">
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Skin hiếm và đẹp</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Tướng đầy đủ</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Rank cao</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>An toàn tuyệt đối</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="account-price-section">
+              <div class="price-info">
+                <span class="price-label">Giá bán:</span>
+                <span class="price-value">500.000 VND</span>
+                <span class="price-original">800.000 VND</span>
+                <span class="discount-badge">-37%</span>
+              </div>
+
+              <div class="action-buttons">
+                <button class="btn-primary" id="buyBtn">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span>Mua ngay</span>
+                </button>
+                <button class="btn-secondary" id="contactBtn">
+                  <i class="fas fa-comments"></i>
+                  <span>Liên hệ</span>
+                </button>
+                <button class="btn-outline" id="wishlistBtn">
+                  <i class="fas fa-heart"></i>
+                  <span>Yêu thích</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Information -->
+      <div class="additional-info">
+        <div class="info-tabs">
+          <div class="tab-header">
+            <button class="tab-btn active" data-tab="details">
+              <i class="fas fa-info-circle"></i> Chi tiết
+            </button>
+            <button class="tab-btn" data-tab="screenshots">
+              <i class="fas fa-images"></i> Hình ảnh
+            </button>
+            <button class="tab-btn" data-tab="reviews">
+              <i class="fas fa-star"></i> Đánh giá
+            </button>
+            <button class="tab-btn" data-tab="related">
+              <i class="fas fa-link"></i> Liên quan
+            </button>
+          </div>
+
+          <div class="tab-content">
+            <!-- Details Tab -->
+            <div class="tab-pane active" id="details">
+              <div class="details-grid">
+                <div class="detail-group">
+                  <h4>Thông tin cơ bản</h4>
+                  <div class="detail-item">
+                    <span class="detail-label">Tên game:</span>
+                    <span class="detail-value">Liên Quân Mobile</span>
+                  </div>
+                  <div class="detail-item">
+                    <span class="detail-label">Server:</span>
+                    <span class="detail-value">Việt Nam</span>
+                  </div>
+                  <div class="detail-item">
+                    <span class="detail-label">Ngày tạo:</span>
+                    <span class="detail-value">01/01/2023</span>
+                  </div>
+                </div>
+
+                <div class="detail-group">
+                  <h4>Thông tin tài khoản</h4>
+                  <div class="detail-item">
+                    <span class="detail-label">Cấp độ:</span>
+                    <span class="detail-value">100</span>
+                  </div>
+                  <div class="detail-item">
+                    <span class="detail-label">Rank:</span>
+                    <span class="detail-value">Kim Cương</span>
+                  </div>
+                  <div class="detail-item">
+                    <span class="detail-label">Số tướng:</span>
+                    <span class="detail-value">50+</span>
+                  </div>
+                </div>
+
+                <div class="detail-group">
+                  <h4>Bảo mật</h4>
+                  <div class="detail-item">
+                    <span class="detail-label">Trạng thái:</span>
+                    <span class="detail-value verified">Đã xác minh</span>
+                  </div>
+                  <div class="detail-item">
+                    <span class="detail-label">Bảo hành:</span>
+                    <span class="detail-value">30 ngày</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Screenshots Tab -->
+            <div class="tab-pane" id="screenshots">
+              <div class="screenshots-grid">
+                <div class="screenshot-item">
+                  <img src="/IMAGES/ma1.png" alt="Screenshot 1" />
+                </div>
+                <div class="screenshot-item">
+                  <img src="/IMAGES/ma2.png" alt="Screenshot 2" />
+                </div>
+                <div class="screenshot-item">
+                  <img src="/IMAGES/ma3.png" alt="Screenshot 3" />
+                </div>
+                <div class="screenshot-item">
+                  <img src="/IMAGES/ma4.png" alt="Screenshot 4" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Reviews Tab -->
+            <div class="tab-pane" id="reviews">
+              <div class="reviews-container">
+                <div class="review-summary">
+                  <div class="rating-overview">
+                    <div class="overall-rating">
+                      <span class="rating-number">4.8</span>
+                      <div class="rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                      </div>
+                      <span class="total-reviews">Dựa trên 156 đánh giá</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="review-list">
+                  <div class="review-item">
+                    <div class="review-header">
+                      <div class="reviewer-info">
+                        <img
+                          src="/IMAGES/aff.gif"
+                          alt="Reviewer"
+                          class="reviewer-avatar"
+                        />
+                        <span class="reviewer-name">Nguyễn Văn A</span>
+                      </div>
+                      <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                    <p class="review-text">
+                      Account rất tốt, rank cao và skin đẹp. Giao dịch nhanh
+                      chóng, an toàn. Rất hài lòng!
+                    </p>
+                    <span class="review-date">2 ngày trước</span>
+                  </div>
+
+                  <div class="review-item">
+                    <div class="review-header">
+                      <div class="reviewer-info">
+                        <img
+                          src="/IMAGES/alm.gif"
+                          alt="Reviewer"
+                          class="reviewer-avatar"
+                        />
+                        <span class="reviewer-name">Trần Thị B</span>
+                      </div>
+                      <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                    </div>
+                    <p class="review-text">
+                      Tài khoản đúng như mô tả, giao dịch thuận tiện. Sẽ mua
+                      lại!
+                    </p>
+                    <span class="review-date">1 tuần trước</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Related Tab -->
+            <div class="tab-pane" id="related">
+              <div class="related-accounts">
+                <h4>Account tương tự</h4>
+                <div class="related-grid">
+                  <div class="related-card">
+                    <img src="/IMAGES/ma2.png" alt="Related Account 1" />
+                    <div class="related-info">
+                      <span class="related-title">Account LQ Cấp 95</span>
+                      <span class="related-price">450.000 VND</span>
+                    </div>
+                  </div>
+                  <div class="related-card">
+                    <img src="/IMAGES/ma3.png" alt="Related Account 2" />
+                    <div class="related-info">
+                      <span class="related-title">Account LQ Cấp 98</span>
+                      <span class="related-price">480.000 VND</span>
+                    </div>
+                  </div>
+                  <div class="related-card">
+                    <img src="/IMAGES/ma4.png" alt="Related Account 3" />
+                    <div class="related-info">
+                      <span class="related-title">Account LQ Cấp 92</span>
+                      <span class="related-price">420.000 VND</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating Action Buttons -->
+    <div class="mes floating-actions">
+      <a
+        href="https://www.messenger.com/"
+        target="_blank"
+        class="messenger-btn"
+      >
+        <i class="fa-brands fa-facebook-messenger fa-2xl"></i>
+        <span class="tooltip">Chat với chúng tôi</span>
+      </a>
+      <a href="/index.html" class="home-btn">
+        <img src="/IMAGES/tc.png" alt="trangchu" />
+        <span class="tooltip">Về trang chủ</span>
+      </a>
+    </div>
+
+    <!-- Footer với animation -->
+    <footer class="footer-animated">
+      <div class="footer-content">
+        <div class="ft1">
+          <i class="fas fa-shield-alt"></i>
+          Mua Bán Game Account Tự Động - An Toàn - Tiện Lợi
+        </div>
+        <div class="ft2">
+          <i class="fas fa-gift"></i>
+          Mang Lại Những Account Chất Lượng, Giá Rẻ, Uy Tín. Cám Ơn Các Bạn Đã
+          Đồng Hành Cùng Tôi Trong Thời Gian Qua!
+        </div>
+        <div class="ft3">
+          <i class="fas fa-clock"></i>
+          Tôi luôn lấy uy tín đặt trên hàng đầu đối với khách hàng, hy vọng
+          chúng tôi sẽ được phục vụ các bạn. Cám ơn!
+          <br />
+          <strong>Thời gian hỗ trợ:</strong> Sáng: 8h00 -> 11h30 | Chiều: 13h00
+          -> 22h00
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/JS/acc.js"></script>
+  </body>
+</html>
